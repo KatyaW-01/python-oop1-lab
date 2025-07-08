@@ -14,4 +14,8 @@ class Coffee:
         else:
             print("size must be Small, Medium, or Large")
 
+    def tip(self):
+        print("This coffee is great, here's a tip!")
+        self.price += 1
+
     size = property(get_size, set_size)
